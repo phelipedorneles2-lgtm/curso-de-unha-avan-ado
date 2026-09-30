@@ -15,8 +15,8 @@
                             bgLight: '#fff9fb',
                             white: '#ffffff',
                             pinkSoft: '#fbe9ed',
-                            pinkPrimary: '#d88b9c',
-                            pinkDark: '#b06173',
+                            pinkPrimary: '#d47a94',
+                            pinkDark: '#b0576d',
                             marsala: '#6e2c3d',
                             roseGold: '#dfb18e',
                             darkText: '#222222',
@@ -36,17 +36,12 @@
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        .glass-panel {
-            background: rgba(255, 255, 255, 0.85);
-            backdrop-filter: blur(16px);
-            border: 1px solid rgba(216, 139, 156, 0.2);
-        }
         .hero-gradient {
             background: radial-gradient(circle at top right, #fcecee 0%, #fff9fb 50%, #ffffff 100%);
         }
         @keyframes pulseGlow {
-            0%, 100% { box-shadow: 0 0 0 0 rgba(216, 139, 156, 0.4); }
-            50% { box-shadow: 0 0 0 15px rgba(216, 139, 156, 0); }
+            0%, 100% { box-shadow: 0 0 0 0 rgba(212, 122, 148, 0.4); }
+            50% { box-shadow: 0 0 0 15px rgba(212, 122, 148, 0); }
         }
         .pulse-cta {
             animation: pulseGlow 2.5s infinite;
@@ -56,25 +51,22 @@
 <body class="bg-brand-bgLight text-brand-darkText font-sans antialiased selection:bg-brand-pinkPrimary selection:text-white">
 
     <!-- Header / Navbar -->
-    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-brand-pinkSoft/60 shadow-xs">
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-brand-pinkSoft/60 shadow-xs">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <div class="flex items-center space-x-3">
-                <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-brand-pinkPrimary to-brand-marsala flex items-center justify-center text-white font-serif text-2xl font-bold shadow-md">
-                    R
-                </div>
-                <div>
-                    <span class="block font-serif tracking-widest font-bold text-gray-900 text-base sm:text-lg">RAFFAELA MATTOS</span>
-                    <span class="block text-[10px] sm:text-xs uppercase tracking-widest text-brand-pinkDark font-semibold">Ateliê de Unhas Profissional</span>
-                </div>
-            </div>
+            <a href="#" class="flex items-center space-x-3">
+                <img src="Rosa.png" alt="Raffaela Mattos Ateliê Logo" class="h-12 w-auto object-contain">
+            </a>
             <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-700">
                 <a href="#sobre" class="hover:text-brand-pinkPrimary transition duration-200">O Curso</a>
-                <a href="#conteudo" class="hover:text-brand-pinkPrimary transition duration-200">Conteúdo</a>
+                <a href="#conteudo" class="hover:text-brand-pinkPrimary transition duration-200">O Que Vai Aprender</a>
                 <a href="#cronograma" class="hover:text-brand-pinkPrimary transition duration-200">Cronograma</a>
                 <a href="#investimento" class="hover:text-brand-pinkPrimary transition duration-200">Investimento</a>
             </nav>
             <div>
-                <a href="#inscricao" class="hidden sm:inline-flex items-center px-6 py-2.5 rounded-full bg-brand-pinkPrimary text-white text-sm font-semibold shadow-md hover:bg-brand-pinkDark transition-all duration-300 transform hover:-translate-y-0.5">
+                <a href="https://wa.me/556781712761?text=Olá!%20Quero%20garantir%20minha%20vaga%20no%20Curso%20de%20Alongamento%20em%20Soft%20Gel!" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="hidden sm:inline-flex items-center px-6 py-2.5 rounded-full bg-brand-pinkPrimary text-white text-sm font-semibold shadow-md hover:bg-brand-pinkDark transition-all duration-300 transform hover:-translate-y-0.5">
                     <i class="fa-brands fa-whatsapp mr-2 text-base"></i> Garantir Vaga
                 </a>
             </div>
@@ -82,8 +74,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="relative hero-bg hero-gradient py-20 lg:py-28 overflow-hidden">
-        <!-- Decorative background blobs -->
+    <section id="sobre" class="relative hero-gradient py-20 lg:py-28 overflow-hidden">
         <div class="absolute top-10 right-[-10%] w-[500px] h-[500px] bg-brand-pinkSoft rounded-full opacity-40 blur-3xl pointer-events-none"></div>
         <div class="absolute bottom-[-10%] left-[-5%] w-[400px] h-[400px] bg-pink-100 rounded-full opacity-40 blur-3xl pointer-events-none"></div>
 
@@ -94,7 +85,7 @@
                 <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
                     <div class="inline-flex items-center space-x-2 bg-white px-4 py-2 rounded-full shadow-xs border border-brand-pinkSoft text-brand-pinkDark text-xs md:text-sm font-semibold uppercase tracking-wider">
                         <i class="fa-solid fa-gem text-brand-roseGold"></i>
-                        <span>Excelência e Alto Nível no Ateliê</span>
+                        <span>Técnica, resultado e alto nível!</span>
                     </div>
 
                     <h1 class="text-3xl sm:text-5xl lg:text-6xl font-serif font-bold text-gray-900 leading-[1.15]">
@@ -102,15 +93,18 @@
                     </h1>
 
                     <p class="text-xl sm:text-2xl font-serif italic text-gray-700">
-                        + Esmaltação em Gel na Unha Natural
+                        + Esmaltação em Gel na unha natural
                     </p>
 
                     <p class="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
-                        Do básico ao avançado, em um único dia! Aprenda as técnicas mais lucrativas do mercado, pratique com supervisão direta e comece a atender imediatamente com segurança e acabamento impecável.
+                        Do básico ao avançado, em um único dia! Aprenda, pratique e comece a atender com acabamento impecável e alta durabilidade.
                     </p>
 
                     <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
-                        <a href="#inscricao" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-full bg-brand-pinkPrimary text-white font-bold text-base shadow-lg hover:bg-brand-pinkDark transition-all duration-300 transform hover:-translate-y-1 pulse-cta">
+                        <a href="https://wa.me/556781712761?text=Olá!%20Quero%20garantir%20minha%20vaga%20no%20Curso%20de%20Alongamento%20em%20Soft%20Gel!" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-full bg-brand-pinkPrimary text-white font-bold text-base shadow-lg hover:bg-brand-pinkDark transition-all duration-300 transform hover:-translate-y-1 pulse-cta">
                             <i class="fa-brands fa-whatsapp mr-2 text-xl"></i> Quero Garantir Minha Vaga
                         </a>
                         <a href="#conteudo" class="w-full sm:w-auto inline-flex items-center justify-center px-7 py-4 rounded-full bg-white text-gray-800 font-semibold text-base shadow-sm border border-brand-pinkSoft hover:bg-brand-bgLight transition">
@@ -135,26 +129,25 @@
                     </div>
                 </div>
 
-                <!-- Right Visual / Elegant Nails Showcase (Inspired by flyer) -->
+                <!-- Right Visual / User's Nail Test Image -->
                 <div class="lg:col-span-5 flex justify-center">
                     <div class="relative w-full max-w-md">
-                        <!-- Decorative glow -->
                         <div class="absolute inset-0 bg-gradient-to-tr from-brand-pinkPrimary to-brand-roseGold rounded-3xl rotate-3 opacity-30 transform scale-105 blur-sm"></div>
                         
                         <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white">
-                            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=800&auto=format&fit=crop" 
-                                 alt="Unhas em Soft Gel elegantes" 
-                                 class="w-full h-[440px] object-cover hover:scale-105 transition duration-700"
-                                 onerror="this.src='https://placehold.co/600x700/fbe9ed/b06173?text=Soft+Gel+Ateliê'">
+                            <img src="unha teste.jpe" 
+                                 alt="Unhas em Soft Gel - Raffaela Mattos Ateliê" 
+                                 class="w-full h-[460px] object-cover hover:scale-105 transition duration-700"
+                                 onerror="this.src='https://placehold.co/600x700/fbe9ed/b0576d?text=Soft+Gel+Ateliê'">
                             
                             <!-- Floating Badge -->
                             <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-4 py-2 rounded-2xl shadow-lg border border-brand-pinkSoft text-brand-marsala text-xs font-bold uppercase tracking-wider">
-                                <i class="fa-solid fa-star text-amber-500 mr-1"></i> Alta Demanda
+                                <i class="fa-solid fa-heart text-brand-pinkPrimary mr-1"></i> Você consegue!
                             </div>
 
                             <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6 text-white">
-                                <span class="bg-brand-pinkPrimary text-white text-[11px] px-3 py-1 rounded-full uppercase tracking-widest font-semibold mb-2 inline-block shadow-sm">Método Exclusivo</span>
-                                <p class="font-serif italic text-lg text-brand-pinkSoft">"Técnica, resultado e alto nível!"</p>
+                                <span class="bg-brand-pinkPrimary text-white text-[11px] px-3 py-1 rounded-full uppercase tracking-widest font-semibold mb-2 inline-block shadow-sm">Ateliê Raffaela Mattos</span>
+                                <p class="font-serif italic text-lg text-brand-pinkSoft">"Transforme sua paixão em profissão."</p>
                             </div>
                         </div>
                     </div>
@@ -164,96 +157,96 @@
         </div>
     </section>
 
-    <!-- O Que Você Vai Aprender (Módulos) -->
+    <!-- O Que Você Vai Aprender (Módulos do Flyer) -->
     <section id="conteudo" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-brand-pinkDark font-semibold text-xs uppercase tracking-widest block mb-3 bg-brand-pinkSoft/60 py-1 px-4 rounded-full w-max mx-auto">CRONOGRAMA DE CONTEÚDO</span>
-                <h2 class="text-3xl md:text-4xl font-serif font-bold text-gray-900">O que você vai aprender no curso</h2>
-                <p class="text-gray-600 mt-4 text-base sm:text-lg font-light">Um programa completo estruturado do zero ao profissional para garantir seu sucesso imediato.</p>
+                <span class="text-brand-pinkDark font-semibold text-xs uppercase tracking-widest block mb-3 bg-brand-pinkSoft/60 py-1 px-4 rounded-full w-max mx-auto">CONTEÚDO PROGRAMÁTICO</span>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-gray-900">O que você vai aprender</h2>
+                <p class="text-gray-600 mt-4 text-base sm:text-lg font-light">Técnicas completas e detalhadas para garantir seu sucesso imediato no mercado.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <!-- Card 1 -->
+                <!-- 1 -->
                 <div class="group p-8 rounded-3xl bg-brand-bgLight border border-brand-pinkSoft/60 shadow-xs hover:shadow-xl hover:border-brand-pinkPrimary transition-all duration-300">
                     <div class="w-14 h-14 rounded-2xl bg-white text-brand-pinkPrimary flex items-center justify-center text-2xl shadow-sm mb-6 group-hover:bg-brand-pinkPrimary group-hover:text-white transition-all duration-300">
-                        <i class="fa-solid fa-hands-bubbles"></i>
+                        <i class="fa-solid fa-check"></i>
                     </div>
-                    <h3 class="font-bold text-xl text-gray-900 mb-3 font-serif">Preparação da Unha Natural</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">Higienização correta, balanceamento de pH e preparação da lâmina ungueal com segurança máxima.</p>
+                    <h3 class="font-bold text-xl text-gray-900 mb-3 font-serif">Preparação da unha natural</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Higienização correta e preparação da lâmina para aderência e durabilidade perfeitas.</p>
                 </div>
 
-                <!-- Card 2 -->
+                <!-- 2 -->
                 <div class="group p-8 rounded-3xl bg-brand-bgLight border border-brand-pinkSoft/60 shadow-xs hover:shadow-xl hover:border-brand-pinkPrimary transition-all duration-300">
                     <div class="w-14 h-14 rounded-2xl bg-white text-brand-pinkPrimary flex items-center justify-center text-2xl shadow-sm mb-6 group-hover:bg-brand-pinkPrimary group-hover:text-white transition-all duration-300">
                         <i class="fa-solid fa-paintbrush"></i>
                     </div>
-                    <h3 class="font-bold text-xl text-gray-900 mb-3 font-serif">Esmaltação em Gel</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">Aplicação impecável rente à cutícula, técnicas anti-manchas e brilho duradouro.</p>
+                    <h3 class="font-bold text-xl text-gray-900 mb-3 font-serif">Esmaltação em gel</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Aplicação impecável rente à cutícula com acabamento profissional e brilho prolongado.</p>
                 </div>
 
-                <!-- Card 3 -->
+                <!-- 3 -->
                 <div class="group p-8 rounded-3xl bg-brand-bgLight border border-brand-pinkSoft/60 shadow-xs hover:shadow-xl hover:border-brand-pinkPrimary transition-all duration-300">
                     <div class="w-14 h-14 rounded-2xl bg-white text-brand-pinkPrimary flex items-center justify-center text-2xl shadow-sm mb-6 group-hover:bg-brand-pinkPrimary group-hover:text-white transition-all duration-300">
                         <i class="fa-solid fa-layer-group"></i>
                     </div>
-                    <h3 class="font-bold text-xl text-gray-900 mb-3 font-serif">Nivelamento Estrutural</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">Técnicas de nivelamento com géis construtores para uma estrutura simétrica e perfeita.</p>
+                    <h3 class="font-bold text-xl text-gray-900 mb-3 font-serif">Nivelamento</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Técnicas essenciais de nivelamento para uma estrutura simétrica, lisa e sofisticada.</p>
                 </div>
 
-                <!-- Card 4 -->
+                <!-- 4 -->
                 <div class="group p-8 rounded-3xl bg-brand-bgLight border border-brand-pinkSoft/60 shadow-xs hover:shadow-xl hover:border-brand-pinkPrimary transition-all duration-300">
                     <div class="w-14 h-14 rounded-2xl bg-white text-brand-pinkPrimary flex items-center justify-center text-2xl shadow-sm mb-6 group-hover:bg-brand-pinkPrimary group-hover:text-white transition-all duration-300">
                         <i class="fa-solid fa-gem"></i>
                     </div>
                     <h3 class="font-bold text-xl text-gray-900 mb-3 font-serif">Alongamento em Soft Gel</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">Domínio absoluto da técnica queridinha do momento para alongamentos rápidos e naturais.</p>
+                    <p class="text-gray-600 text-sm leading-relaxed">Domínio completo da técnica mais procurada para alongamentos rápidos e naturais.</p>
                 </div>
 
-                <!-- Card 5 -->
+                <!-- 5 -->
                 <div class="group p-8 rounded-3xl bg-brand-bgLight border border-brand-pinkSoft/60 shadow-xs hover:shadow-xl hover:border-brand-pinkPrimary transition-all duration-300">
                     <div class="w-14 h-14 rounded-2xl bg-white text-brand-pinkPrimary flex items-center justify-center text-2xl shadow-sm mb-6 group-hover:bg-brand-pinkPrimary group-hover:text-white transition-all duration-300">
                         <i class="fa-solid fa-hammer"></i>
                     </div>
-                    <h3 class="font-bold text-xl text-gray-900 mb-3 font-serif">Estrutura e Acabamento</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">Lixamento técnico, curvatura correta e acabamento fino para unhas altamente resistentes.</p>
+                    <h3 class="font-bold text-xl text-gray-900 mb-3 font-serif">Estrutura e acabamento</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Lixamento técnico e refinamento para unhas altamente resistentes e leves.</p>
                 </div>
 
-                <!-- Card 6 -->
+                <!-- 6 -->
+                <div class="group p-8 rounded-3xl bg-brand-bgLight border border-brand-pinkSoft/60 shadow-xs hover:shadow-xl hover:border-brand-pinkPrimary transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-white text-brand-pinkPrimary flex items-center justify-center text-2xl shadow-sm mb-6 group-hover:bg-brand-pinkPrimary group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <h3 class="font-bold text-xl text-gray-900 mb-3 font-serif">Técnicas para maior durabilidade</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Segredos de retenção para evitar descolamentos e garantir clientes fiéis.</p>
+                </div>
+
+                <!-- 7 -->
                 <div class="group p-8 rounded-3xl bg-brand-bgLight border border-brand-pinkSoft/60 shadow-xs hover:shadow-xl hover:border-brand-pinkPrimary transition-all duration-300">
                     <div class="w-14 h-14 rounded-2xl bg-white text-brand-pinkPrimary flex items-center justify-center text-2xl shadow-sm mb-6 group-hover:bg-brand-pinkPrimary group-hover:text-white transition-all duration-300">
                         <i class="fa-solid fa-shield-halved"></i>
                     </div>
                     <h3 class="font-bold text-xl text-gray-900 mb-3 font-serif">Biossegurança</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">Normas rígidas de esterilização, higiene e segurança para atuar com total profissionalismo.</p>
+                    <p class="text-gray-600 text-sm leading-relaxed">Normas de esterilização e higiene essenciais para um atendimento seguro e profissional.</p>
                 </div>
 
-                <!-- Card 7 -->
+                <!-- 8 -->
                 <div class="group p-8 rounded-3xl bg-brand-bgLight border border-brand-pinkSoft/60 shadow-xs hover:shadow-xl hover:border-brand-pinkPrimary transition-all duration-300">
                     <div class="w-14 h-14 rounded-2xl bg-white text-brand-pinkPrimary flex items-center justify-center text-2xl shadow-sm mb-6 group-hover:bg-brand-pinkPrimary group-hover:text-white transition-all duration-300">
                         <i class="fa-solid fa-clock-rotate-left"></i>
                     </div>
-                    <h3 class="font-bold text-xl text-gray-900 mb-3 font-serif">Manutenção e Remoção</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">Como realizar manutenções corretas e remoção segura preservando a integridade da unha natural.</p>
+                    <h3 class="font-bold text-xl text-gray-900 mb-3 font-serif">Manutenção e remoção</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Como realizar manutenções corretas e remoção sem danificar a unha natural.</p>
                 </div>
 
-                <!-- Card 8 -->
-                <div class="group p-8 rounded-3xl bg-brand-bgLight border border-brand-pinkSoft/60 shadow-xs hover:shadow-xl hover:border-brand-pinkPrimary transition-all duration-300">
-                    <div class="w-14 h-14 rounded-2xl bg-white text-brand-pinkPrimary flex items-center justify-center text-2xl shadow-sm mb-6 group-hover:bg-brand-pinkPrimary group-hover:text-white transition-all duration-300">
-                        <i class="fa-solid fa-award"></i>
-                    </div>
-                    <h3 class="font-bold text-xl text-gray-900 mb-3 font-serif">Durabilidade Máxima</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">Segredos profissionais para evitar descolamentos e garantir alta retenção nas clientes.</p>
-                </div>
-
-                <!-- Card 9 -->
+                <!-- 9 -->
                 <div class="group p-8 rounded-3xl bg-brand-bgLight border border-brand-pinkSoft/60 shadow-xs hover:shadow-xl hover:border-brand-pinkPrimary transition-all duration-300">
                     <div class="w-14 h-14 rounded-2xl bg-white text-brand-pinkPrimary flex items-center justify-center text-2xl shadow-sm mb-6 group-hover:bg-brand-pinkPrimary group-hover:text-white transition-all duration-300">
                         <i class="fa-solid fa-user-graduate"></i>
                     </div>
-                    <h3 class="font-bold text-xl text-gray-900 mb-3 font-serif">Prática Supervisionada</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">Mão na massa o dia todo com supervisão direta, correção de postura e atendimento prático.</p>
+                    <h3 class="font-bold text-xl text-gray-900 mb-3 font-serif">Prática supervisionada</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Mão na massa durante todo o dia com acompanhamento direto e correções em tempo real.</p>
                 </div>
 
             </div>
@@ -270,10 +263,10 @@
                     <div>
                         <div class="inline-flex items-center space-x-2 bg-brand-pinkSoft/80 px-4 py-1.5 rounded-full text-brand-pinkDark text-xs font-bold uppercase tracking-wider mb-6">
                             <i class="fa-regular fa-calendar text-brand-pinkPrimary"></i>
-                            <span>CRONOGRAMA DO CURSO</span>
+                            <span>CRONOGRAMA</span>
                         </div>
                         <h3 class="text-3xl font-serif font-bold text-gray-900 mb-4">Imersão de 1 Dia Completo</h3>
-                        <p class="text-gray-600 mb-8 font-light leading-relaxed">Um dia inteiro dedicado ao seu crescimento profissional, combinando teoria essencial e prática intensiva para você sair pronta para atender.</p>
+                        <p class="text-gray-600 mb-8 font-light leading-relaxed">Teoria e prática intensiva para você sair preparada para atender suas primeiras clientes imediatamente.</p>
                         
                         <div class="space-y-6">
                             <div class="flex items-start space-x-4 bg-brand-bgLight p-5 rounded-2xl border border-brand-pinkSoft/40">
@@ -281,8 +274,8 @@
                                     <i class="fa-regular fa-clock"></i>
                                 </div>
                                 <div>
-                                    <span class="block font-bold text-gray-900 text-lg">08h30 às 18h00</span>
-                                    <span class="text-gray-600 text-sm">Carga horária intensiva com pausa para almoço e coffee break especial.</span>
+                                    <span class="block font-bold text-gray-900 text-lg">1 DIA</span>
+                                    <span class="text-gray-600 text-sm">Das 08h30 às 18h00.</span>
                                 </div>
                             </div>
                             
@@ -291,22 +284,22 @@
                                     <i class="fa-solid fa-mug-hot"></i>
                                 </div>
                                 <div>
-                                    <span class="block font-bold text-gray-900 text-lg">Estrutura Premium no Ateliê</span>
-                                    <span class="text-gray-600 text-sm">Ambiente climatizado, materiais de apoio inclusos em sala e Certificado Profissional.</span>
+                                    <span class="block font-bold text-gray-900 text-lg">Ateliê Exclusivo</span>
+                                    <span class="text-gray-600 text-sm">Ambiente profissional e certificado inclusos.</span>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="mt-8 pt-6 border-t border-gray-100 flex items-center text-brand-pinkDark font-semibold">
-                        <i class="fa-solid fa-heart mr-2 text-brand-pinkPrimary"></i> Transforme sua paixão em profissão!
+                        <i class="fa-solid fa-heart mr-2 text-brand-pinkPrimary"></i> Aprenda, pratique e comece a atender!
                     </div>
                 </div>
 
                 <!-- Investimento & Pagamento -->
                 <div id="investimento" class="bg-white rounded-3xl p-8 sm:p-10 shadow-xl border-2 border-brand-pinkPrimary flex flex-col justify-between relative overflow-hidden">
                     <div class="absolute top-0 right-0 bg-brand-pinkPrimary text-white text-xs font-bold px-5 py-2 rounded-bl-2xl uppercase tracking-widest shadow-md">
-                        Vagas Limitadas!
+                        Vagas limitadas!
                     </div>
 
                     <div>
@@ -316,7 +309,7 @@
                         </div>
                         
                         <div class="mb-6">
-                            <span class="text-gray-500 text-sm block mb-1">Valor Total do Curso</span>
+                            <span class="text-gray-500 text-sm block mb-1">Valor Total</span>
                             <div class="flex items-baseline space-x-2">
                                 <span class="text-4xl md:text-5xl font-serif font-bold text-gray-900">R$ 450,00</span>
                             </div>
@@ -328,22 +321,23 @@
                             </h4>
                             <ul class="space-y-4 text-sm text-gray-700">
                                 <li class="flex items-center justify-between pb-3 border-b border-brand-pinkSoft/60">
-                                    <span>Entrada para garantir a vaga:</span>
-                                    <strong class="text-brand-pinkDark font-bold text-lg">R$ 225,00</strong>
+                                    <span>R$ 225,00 de entrada para garantir a vaga:</span>
                                 </li>
                                 <li class="flex items-center justify-between">
-                                    <span>Restante na semana do curso:</span>
-                                    <strong class="text-brand-pinkDark font-bold text-lg">R$ 225,00</strong>
+                                    <span>R$ 225,00 na semana do curso:</span>
                                 </li>
                             </ul>
                         </div>
                     </div>
 
                     <div>
-                        <a href="#inscricao" class="w-full py-4 rounded-2xl bg-brand-pinkPrimary text-white font-bold text-center block shadow-lg hover:bg-brand-pinkDark transition-all duration-300 transform hover:-translate-y-0.5">
+                        <a href="https://wa.me/556781712761?text=Olá!%20Quero%20garantir%20minha%20vaga%20no%20Curso%20de%20Alongamento%20em%20Soft%20Gel!" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="w-full py-4 rounded-2xl bg-brand-pinkPrimary text-white font-bold text-center block shadow-lg hover:bg-brand-pinkDark transition-all duration-300 transform hover:-translate-y-0.5">
                             <i class="fa-brands fa-whatsapp mr-2 text-xl"></i> Garantir Minha Vaga Agora
                         </a>
-                        <p class="text-center text-xs text-gray-500 mt-3">Atendimento imediato via WhatsApp oficial.</p>
+                        <p class="text-center text-xs text-gray-500 mt-3">WhatsApp: (67) 8171-2761</p>
                     </div>
                 </div>
 
@@ -352,28 +346,28 @@
     </section>
 
     <!-- Inscrição / WhatsApp Final CTA -->
-    <section id="inscricao" class="py-24 bg-white">
+    <section class="py-24 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div class="bg-gradient-to-br from-brand-pinkSoft/40 via-white to-brand-bgLight rounded-3xl p-8 sm:p-14 shadow-2xl border border-brand-pinkSoft relative overflow-hidden">
                 <div class="absolute -right-20 -bottom-20 w-72 h-72 bg-brand-pinkSoft rounded-full opacity-50 blur-3xl pointer-events-none"></div>
                 
-                <h2 class="text-3xl md:text-5xl font-serif font-bold text-gray-900 mb-4">Você consegue! Dê o primeiro passo</h2>
+                <h2 class="text-3xl md:text-5xl font-serif font-bold text-gray-900 mb-4">Você consegue!</h2>
                 <p class="text-gray-600 max-w-xl mx-auto mb-8 font-light text-base sm:text-lg leading-relaxed">
-                    As turmas são reduzidas para garantir atenção personalizada a cada aluna. Entre em contato agora pelo WhatsApp para tirar dúvidas e assegurar sua vaga!
+                    Vagas limitadas! Entre em contato agora pelo WhatsApp para assegurar sua vaga e dar o próximo passo na sua carreira.
                 </p>
 
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <a href="https://wa.me/5500000000000?text=Olá!%20Quero%20garantir%20minha%20vaga%20no%20Curso%20de%20Alongamento%20em%20Soft%20Gel!" 
+                    <a href="https://wa.me/556781712761?text=Olá!%20Quero%20garantir%20minha%20vaga%20no%20Curso%20de%20Alongamento%20em%20Soft%20Gel!" 
                        target="_blank" 
                        rel="noopener noreferrer"
                        class="w-full sm:w-auto inline-flex items-center justify-center px-10 py-5 rounded-full bg-emerald-600 text-white font-bold text-lg shadow-xl hover:bg-emerald-700 transition-all duration-300 transform hover:-translate-y-1">
-                        <i class="fa-brands fa-whatsapp mr-3 text-2xl"></i> Falar no WhatsApp Oficial
+                        <i class="fa-brands fa-whatsapp mr-3 text-2xl"></i> Chamar no WhatsApp (67) 8171-2761
                     </a>
                 </div>
                 
                 <div class="mt-8 flex flex-wrap items-center justify-center gap-6 text-xs text-gray-500 uppercase tracking-widest font-semibold">
                     <span class="flex items-center"><i class="fa-solid fa-check text-brand-pinkPrimary mr-1.5 text-sm"></i> Certificado Incluso</span>
-                    <span class="flex items-center"><i class="fa-solid fa-check text-brand-pinkPrimary mr-1.5 text-sm"></i> Suporte Pós-Curso</span>
+                    <span class="flex items-center"><i class="fa-solid fa-check text-brand-pinkPrimary mr-1.5 text-sm"></i> Pagamento Flexível</span>
                     <span class="flex items-center"><i class="fa-solid fa-check text-brand-pinkPrimary mr-1.5 text-sm"></i> Vagas Limitadas</span>
                 </div>
             </div>
@@ -384,24 +378,15 @@
     <footer class="bg-gray-900 text-white py-14 border-t border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
             <div class="flex items-center space-x-3">
-                <div class="w-10 h-10 rounded-2xl bg-brand-pinkPrimary flex items-center justify-center text-white font-serif text-xl font-bold shadow-md">
-                    R
-                </div>
-                <div>
-                    <span class="block font-serif tracking-wider font-bold text-base">RAFFAELA MATTOS</span>
-                    <span class="block text-xs uppercase tracking-widest text-brand-pinkPrimary font-semibold">Ateliê de Unhas</span>
-                </div>
+                <img src="Rosa.png" alt="Logo" class="h-10 w-auto object-contain brightness-200">
             </div>
 
             <p class="text-sm text-gray-400 font-light">
-                © 2026 Raffaela Mattos Ateliê. Todos os direitos reservados. Transforme sua paixão em profissão.
+                © 2026 Raffaela Mattos Ateliê. Todos os direitos reservados.
             </p>
 
             <div class="flex space-x-4">
-                <a href="#" aria-label="Instagram" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-300 hover:bg-brand-pinkPrimary hover:text-white transition shadow-sm">
-                    <i class="fa-brands fa-instagram text-lg"></i>
-                </a>
-                <a href="#" aria-label="WhatsApp" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-300 hover:bg-emerald-600 hover:text-white transition shadow-sm">
+                <a href="https://wa.me/556781712761" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-300 hover:bg-emerald-600 hover:text-white transition shadow-sm">
                     <i class="fa-brands fa-whatsapp text-lg"></i>
                 </a>
             </div>
